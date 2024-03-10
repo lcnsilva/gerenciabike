@@ -1,11 +1,13 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins", sans-serif;
     overflow: hidden;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 :root {
@@ -135,58 +137,95 @@
 .conteudo {
     width: 85vw;
     height: 100vh;
-    padding: 3% 4% 1% 4%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 100px;
-    overflow: auto;
+    align-items: center;
+    justify-content: center;
 }
 
-.bicicleta1, .bicicleta2, .bicicleta3, .bicicleta4, .bicicleta5, .bicicleta6, .bicicleta7, .bicicleta8, .bicicleta9 {
-    width: 25%;
-    height: 37%;
-    background-color: rgba(255, 255, 255, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content: space-between;
-    gap: 10px;    
+.conteudo__alertas {
+    height: 82vh;
+    width: 75vw;
+    background-color: transparent;
     border-radius: 15px;
 }
 
-
-.bicicleta__img {
-    background-image: url(../assets/img/bicicleta2.png);
-    width: 80%;
-    height: 50%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.bicicleta__dados {
-    width: 80%;
-    height: 50%;
-    color: black;
+.conteudo__alertas-navbar {
+    width: 100%;
+    height: 35%;
+    background-color: rgba(255, 255, 255, 0.1);
     display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
-.bicicleta__dados label{
+.conteudo__alertas-ultimoalerta {
+    background-color: dimgray;
+    height: 100%;
+    width: 70%;
+    margin: 1%;
+}
+
+.conteudo__alertas-criaralerta {
+    background-color: transparent;
+    width: 30%;
+    height: 100%;
+    margin: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container__botaoalerta {
+    width: 50%;
+}
+
+.container__botaoalerta button {
+    width: 100%;
+    height: 50px;
+    border-radius: 40px;
+    background-color: rgb(255, 255, 255, 1);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.4s ease;
+    font-weight: 600;
+}
+
+.conteudo__alertas-historico {
+    width: 100%;
+    height: 65%;
+}
+
+.conteudo__alertas-historico table{
+    font-size: 25px;
+    width: 98%;
+    height: 80%;
+    text-align: left;
+    border-collapse: collapse;
+    margin: 1%;    
+}
+
+.conteudo__alertas-historico th {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.conteudo__alertas-historico td {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-.bicicleta__img a {
+.conteudo__alertas-historico th, td{
+    border: solid 1px black;
+    padding: 10px;
+}
+
+.container__table{
     width: 100%;
     height: 100%;
-    text-decoration: none; /* remove sublinhado padrão */
-    color: inherit; /* usa a cor padrão do texto */
-    display: inline-block; /* torna o link clicável */
-
+    background-color: rgba(255, 255, 255, 0.1);;
 }
+
 /*  PERGUNTAR SOBRE SE REPLICA O MENU EM TODAS AS PÁGINAS OU SE TEM ALGUMA OUTRA FORMA DE APARECER O MENU NOVAMENTE */
 
 /* 
