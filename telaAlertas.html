@@ -63,12 +63,23 @@
         <div class="conteudo">
             <div class="conteudo__alertas">
                 <div class="conteudo__alertas-navbar">
-                    <div class="conteudo__alertas-ultimoalerta">
+                    <div class="modal" id="myModal">
+                        <div class="modal__conteudo">
+                            <div class="modal_conteudo-input">
+                                <button id="fecharModal">Fechar</button>
+                            </div>
 
+                        </div>
+
+                    </div>
+                    <div class="conteudo__alertas-ultimoalerta">
+                            
+                        <img src="./assets/img/bicicleta2.png" width="250px" height="150px">
+ 
                     </div>
                     <div class="conteudo__alertas-criaralerta">
                         <div class="container__botaoalerta">
-                            <button>CRIAR ALERTA</button>
+                            <button id="abrirModal">CRIAR ALERTA</button>
                         </div>
                         <div class="container__botaoalerta">
                             <button>MODIFICAR ALERTA</button>
@@ -145,13 +156,6 @@
         </div>        
     </div>
 
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('.sub-btn').click(function(){
-                $(this).next('.sub-menu').slideToggle();
-                $(this).find('.dropdown').toggleClass('rotate');
-            });
-        });
-    </script>
+    <script src="./js/telaAlerta.js"></script>              
 </body>
 </html>

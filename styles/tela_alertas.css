@@ -193,9 +193,12 @@
     font-weight: 600;
 }
 
-.conteudo__alertas-historico {
-    width: 100%;
-    height: 65%;
+.container__botaoalerta button:hover{
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+.container__botaoalerta button:active {
+    background-color: rgb(255, 255, 255, 1);
 }
 
 .conteudo__alertas-historico table{
@@ -226,12 +229,35 @@
     background-color: rgba(255, 255, 255, 0.1);;
 }
 
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 60%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: auto;
+}
+
+.modal__conteudo {
+    background-color: #425c88;
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal_conteudo-input {
+    background-color: #a1aec3;
+
+}
+
+
 /*  PERGUNTAR SOBRE SE REPLICA O MENU EM TODAS AS PÁGINAS OU SE TEM ALGUMA OUTRA FORMA DE APARECER O MENU NOVAMENTE */
 
-/* 
-
-JOGAR O SCRIPT PARA UM SCRIPT.JS
-
-TROCAR ICONES PARA ARQUIVOS SVG;
-
-*/
