@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerencia Bike</title>
+    <link rel="stylesheet" href="./styles/tela_principal.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="UTF-8" ></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <nav> 
+                <div class="side-bar active">                    
+                    <div class="menu">
+                        <div class="logoteste">
+                            <a href="telaPrincipal.html">
+                                <img src="./assets/39e88088-f0d5-4369-bca6-675ec0143f5d.jpg" alt="Logo Casa" width="55px" height="55px" class="icon">Gerencia Bike
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="telaPrincipal.html">
+                                <img src="./assets/icon home.svg" alt="Logo Casa" width="25px" height="25px" class="icon">Inicio
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a class="sub-btn">
+                                <img src="./assets/icon bicicleta.svg" alt="Logo Casa" width="25px" height="25px" class="icon">Bicicletas<img src="./assets/icon dropdown.svg" alt="Logo Casa" width="25px" height="25px" class="icon dropdown">
+                            </a>
+                            <div class="sub-menu">
+                                <a href="./telaBicicletas.html" class="sub-item">Bicicleta 1</a>
+                                <a href="./telaBicicletas.html" class="sub-item">Bicicleta 2</a>
+                                <a href="./telaBicicletas.html" class="sub-item">Bicicleta 3</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="./telaAlertas.html"><img src="./assets/icon alerta.svg" alt="Logo Casa" width="25px" height="25px" class="icon">Alertas</a>
+                        </div>
+                        <div class="item">
+                            <a class="sub-btn">
+                                <img src="./assets/icon relatorio.svg" alt="Logo Casa" width="25px" height="25px" class="icon">Relatórios<img src="./assets/icon dropdown.svg" alt="Logo Casa" width="25px" height="25px" class="icon dropdown">
+                            </a>
+                            <div class="sub-menu">
+                                <a href="#" class="sub-item">Relatórios de Manutenção</a>
+                                <a href="#" class="sub-item">Relatórios de Uso</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="index.html"><img src="./assets/icon feedback.svg" alt="Logo Casa" width="25px" height="25px" class="icon">Feedbacks</a>
+                        </div>
+                        <div class="item">
+                            <a href="index.html"><img src="./assets/icon sobre.svg" alt="Logo Casa" width="25px" height="25px" class="icon">Sobre</a>
+                        </div>
+                        <div class="item">
+                            <a href="./telaLogin.html"><img src="./assets/icon sair.svg" alt="Logo Casa" width="25px" height="25px" class="icon">Sair</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="conteudo">
+            <div class="bicicleta1">
+                <div class="bicicleta__img">
+
+                </div>
+                <div class="bicicleta__dados">
+                    <div class="bicicleta__dados-id">
+                        <label>ID:</label>
+                        <span></span>
+                    </div>
+                    <div class="bicicleta__dados-data">
+                        <label>última Atualização:</label>
+                        <span></span>
+                    </div>
+                    <div class="bicicleta__dados-data">
+                        <label>Estado:</label>
+                        <span></span>
+                    </div>
+                    <div class="bicicleta__dados-data">
+                        <label>Em uso:</label>
+                        <span></span>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="bicicleta2">                
+                <div class="bicicleta__img">
+
+                </div>
+                <div class="bicicleta__dados">
+                    <div class="bicicleta__dados-id">
+                        <label>ID:</label>
+                        <span></span>
+                    </div>
+                    <div class="bicicleta__dados-data">
+                        <label>última Atualização:</label>
+                        <span></span>
+                    </div>
+                    <div class="bicicleta__dados-data">
+                        <label>Estado:</label>
+                        <span></span>
+                    </div>
+                    <div class="bicicleta__dados-data">
+                        <label>Em uso:</label>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="bicicleta3">
+                <div class="bicicleta__img">
+
+                </div>
+                <div class="bicicleta__dados">
+                    <div class="bicicleta__dados-id">
+                        <label>ID:</label>
+                        <span></span>
+                    </div>
+                    <div class="bicicleta__dados-data">
+                        <label>última Atualização:</label>
+                        <span></span>
+                    </div>
+                    <div class="bicicleta__dados-estado">
+                        <label>Estado:</label>
+                        <span></span>
+                    </div>
+                    <div class="bicicleta__dados-uso">
+                        <label>Em uso:</label>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="bicicleta4">
+                <div class="bicicleta__img">
+
+                </div>
+                <div class="bicicleta__dados">
+                    <div class="bicicleta__dados-id">
+                        <label>ID:</label>
+                        <span></span>
+                    </div>
+                    <div class="bicicleta__dados-data">
+                        <label>última Atualização:</label>
+                        <span></span>
+                    </div>
+                    <div class="bicicleta__dados-estado">
+                        <label>Estado:</label>
+                        <span></span>
+                    </div>
+                    <div class="bicicleta__dados-uso">
+                        <label>Em uso:</label>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="bicicleta5">
+                <div class="bicicleta__img">
+
+                </div>
+                <div class="bicicleta__dados">
+                    <div class="bicicleta__dados-id">
+                        <label>ID:</label>
+                        <span></span>
+                    </div>
+                    <div class="bicicleta__dados-data">
+                        <label>última Atualização:</label>
+                        <span></span>
+                    </div>
+                    <div class="bicicleta__dados-estado">
+                        <label>Estado:</label>
+                        <span></span>
+                    </div>
+                    <div class="bicicleta__dados-uso">
+                        <label>Em uso:</label>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="bicicleta6">
+                <div class="bicicleta__img">
+
+                </div>
+                <div class="bicicleta__dados">
+                    <div class="bicicleta__dados-id">
+                        <label>ID:</label>
+                        <span></span>
+                    </div>
+                    <div class="bicicleta__dados-data">
+                        <label>última Atualização:</label>
+                        <span></span>
+                    </div>
+                    <div class="bicicleta__dados-estado">
+                        <label>Estado:</label>
+                        <span></span>
+                    </div>
+                    <div class="bicicleta__dados-uso">
+                        <label>Em uso:</label>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="bicicleta7">
+                <div class="bicicleta__img">
+
+                </div>
+                <div class="bicicleta__dados">
+                    <div class="bicicleta__dados-id">
+                        <label>ID:</label>
+                        <span></span>
+                    </div>
+                    <div class="bicicleta__dados-data">
+                        <label>última Atualização:</label>
+                        <span></span>
+                    </div>
+                    <div class="bicicleta__dados-estado">
+                        <label>Estado:</label>
+                        <span></span>
+                    </div>
+                    <div class="bicicleta__dados-uso">
+                        <label>Em uso:</label>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="bicicleta8">
+                <div class="bicicleta__img">
+
+                </div>
+                <div class="bicicleta__dados">
+                    <div class="bicicleta__dados-id">
+                        <label>ID:</label>
+                        <span></span>
+                    </div>
+                    <div class="bicicleta__dados-data">
+                        <label>última Atualização:</label>
+                        <span></span>
+                    </div>
+                    <div class="bicicleta__dados-estado">
+                        <label>Estado:</label>
+                        <span></span>
+                    </div>
+                    <div class="bicicleta__dados-uso">
+                        <label>Em uso:</label>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="bicicleta9">
+                <div class="bicicleta__img">
+
+                </div>
+                <div class="bicicleta__dados">
+                    <div class="bicicleta__dados-id">
+                        <label>ID:</label>
+                        <span></span>
+                    </div>
+                    <div class="bicicleta__dados-data">
+                        <label>última Atualização:</label>
+                        <span></span>
+                    </div>
+                    <div class="bicicleta__dados-estado">
+                        <label>Estado:</label>
+                        <span></span>
+                    </div>
+                    <div class="bicicleta__dados-uso">
+                        <label>Em uso:</label>
+                        <span></span>
+                    </div>
+                </div>
+            </div>           
+        </div>
+        
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sub-btn').click(function(){
+                $(this).next('.sub-menu').slideToggle();
+                $(this).find('.dropdown').toggleClass('rotate');
+            });
+        });
+    </script>
+</body>
+</html>

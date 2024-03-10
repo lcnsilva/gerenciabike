@@ -165,3 +165,6 @@ button:hover {
     text-decoration: underline;
 }
 
+#logginbutton {
+    text-decoration: none;
+}
