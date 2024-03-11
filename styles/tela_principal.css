@@ -148,28 +148,30 @@
 
 .topbar{
     gap: 15px;
-    padding: 13px;
+    padding: 1.1%;
     justify-content: center;
     display: flex;
     background-color: rgba(255, 255, 255, 0.1);
     height: 10%;
 }
 
-.topbar button{
-        width: 16%;
-        height: 40px;
-        border-radius: 30px;
-        background-color: rgb(255, 255, 255, 1);
-        border: none;
-        outline: none;
-        cursor: pointer;
-        font-size: 1rem;
-        font-weight: 600;
-        transition: all 0.4s ease;
+.topbar button{ 
+    width: 100%;
+    height: 40px;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255, 1);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.4s ease;
+        
 }
 
 .topbar a {
     text-decoration: none;
+    width: 16%;
 }
 
 .bicicleta1, .bicicleta2, .bicicleta3, .bicicleta4, .bicicleta5, .bicicleta6, .bicicleta7, .bicicleta8, .bicicleta9 {
@@ -204,6 +206,7 @@
     justify-content: space-evenly;
     flex-direction: column;
     flex-wrap: nowrap;
+    padding-bottom: 10px;
 
 }
 
@@ -221,6 +224,35 @@
     text-decoration: none; /* remove sublinhado padrão */
     color: inherit; /* usa a cor padrão do texto */
     display: inline-block; /* torna o link clicável */
+
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 60%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: auto;
+}
+
+.modal__conteudo {
+    background-color: #425c88;
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal_conteudo-input {
+    background-color: #a1aec3;
 
 }
 

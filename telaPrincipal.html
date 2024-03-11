@@ -56,17 +56,26 @@
                             <a href="index.html"><img src="./assets/icon sobre.svg" alt="Logo Casa" width="25px" height="25px" class="icon">Sobre</a>
                         </div>
                         <div class="item">
-                            <a href="./telaLogin.html"><img src="./assets/icon sair.svg" alt="Logo Casa" width="25px" height="25px" class="icon">Sair</a>
+                            <a href="./telaInicial.html"><img src="./assets/icon sair.svg" alt="Logo Casa" width="25px" height="25px" class="icon">Sair</a>
                         </div>
                     </div>
                 </div>
             </nav>
         </div>
         <div class="conteudo">
+            <div class="modal" id="myModal">
+                <div class="modal__conteudo">
+                    <div class="modal_conteudo-input">
+                        <button id="fecharModal">Fechar</button>
+                    </div>
+
+                </div>
+
+            </div>
             <div class="topbar">
-                <button><a href="#" id="logginbutton">Adicionar Bicicleta</a></button>
-                <button><a href="#" id="logginbutton">Modificar Bicicleta</a></button>
-                <button><a href="#" id="logginbutton">Remover Bicicleta</a></button>
+                <a href="#" id="abrirModal"><button>Adicionar Bicicleta</button></a>
+                <a href="#" id="abrirModal"><button>Modificar Bicicleta</button></a>
+                <a href="#" id="abrirModal"><button>Remover Bicicleta</button></a>
             </div> 
             <div class="bicicleta">
                 <div class="bicicleta1">
@@ -279,19 +288,8 @@
                     </div>
                 </div>
             </div>          
-        </div>
-        
+        </div>        
     </div>
-
-    
-
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('.sub-btn').click(function(){
-                $(this).next('.sub-menu').slideToggle();
-                $(this).find('.dropdown').toggleClass('rotate');
-            });
-        });
-    </script>
+    <script src="./js/telaAlerta.js"></script>
 </body>
 </html>
