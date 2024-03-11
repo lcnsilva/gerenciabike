@@ -36,6 +36,28 @@ body {
 }
 
 
+.logo__label {
+    font-size: 23px;
+    color: #fff;
+    border-left: #fff 1px solid;
+    padding-left: 20px;
+
+}
+
+.header__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header__logo img{
+    border-radius: 100px;
+    margin-top: 15px;   
+}
+
+
+
 img{
     border-radius: 100px;
     margin-top: 15px;
