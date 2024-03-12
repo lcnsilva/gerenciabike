@@ -409,6 +409,18 @@ h3{
     transition: .3s;
 }
 
+.modal__form-input select{
+    background-color: white;
+}
+
+.modal__form-input input{
+    background-color: white;
+    color: black;
+    outline: none;
+    border: none;
+}
+
+
 .box-select{
     display: flex;
     justify-content: space-evenly;

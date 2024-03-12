@@ -279,6 +279,19 @@
     align-items: center;
 }
 
+.modal__form-input select{
+    background-color: white;
+}
+
+.modal__form-input input{
+    background-color: white;
+    color: black;
+    outline: none;
+    border: none;
+}
+
+
+
 .content{
     background-color: rgba(255, 255, 255, 0.5);
     padding: 2rem;
