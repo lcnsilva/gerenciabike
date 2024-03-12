@@ -1,11 +1,13 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins", sans-serif;
     overflow: hidden;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 :root {
@@ -22,6 +24,27 @@
     margin-left: 1%;
     height: 10vh;
 }
+
+.logo__label {
+    font-size: 20px;
+    color: #fff;
+    border-left: #fff 1px solid;
+    padding-left: 25px;
+
+}
+
+.header__logo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.432);
+    height: 10vh;
+}
+
+.header__logo img{
+    border-radius: 100px;   
+}
+
 
 .container__logo {
     display: flex;
@@ -189,7 +212,7 @@
     gap: 10px;    
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
 
 }
 
@@ -236,18 +259,18 @@
     display: none;
     position: fixed;
     z-index: 1;
-    left: 60%;
+    left: 50%;
     top: 46%;
     transform: translate(-50%, -50%);
-    width: 50%;
-    height: 65%;
+    width: 33%;
+    height: 55%;
     background-color: rgba(0, 0, 0, 0.4);
     overflow: auto;
+    border-radius: 13px;
 }
 
 .modal__conteudo {
     background-color: #425c88;
-    padding: 20px;
     border-radius: 5px;
     width: 100%;
     height: 100%;
@@ -258,23 +281,33 @@
 
 .content{
     background-color: rgba(255, 255, 255, 0.5);
-    padding: 3rem;
+    padding: 2rem;
     border-radius: 13px;
     min-width: 30%;
     overflow: auto;
-    width: 65%;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
 }
 
 h3{
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
 }
 
 .content form{
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    justify-content: space-evenly;
+    gap: 13px;
+    height: auto;
+}
+
+.modal__form-input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .span-required{
@@ -299,9 +332,9 @@ h3{
 
 .box-select{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     font-weight: bold;
-    gap: 5px;
+    gap: 100px;
 }
 
 button[type="submit"]{

@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerencia Bike</title>
     <link rel="stylesheet" href="./styles/tela_alertas.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="UTF-8" ></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="UTF-8"></script>
 
 </head>
+
 <body>
     <div class="container">
         <div class="navbar">
-            <nav> 
-                <div class="side-bar active">                    
+            <nav>
+                <div class="side-bar active">
                     <div class="menu">
-                        <div class="logoteste">
-                            <a href="telaPrincipal.html">
-                                <img src="./assets/fe2b0423-27a0-4fda-beac-97d6014e15d2.jpg" alt="Logo Casa" width="55px" height="55px">
-                            </a>
+                        <div class="header__logo">
+                            <a href="#" class="logo"><img src="./assets/img/logogerencia.jpg" width="110px" height="105px"></a>
+                            <label class="logo__label">GerenciaBike</label>
                         </div>
                         <div class="item">
                             <a href="telaPrincipal.html">
-                                <img src="./assets/icon home.svg" alt="Logo Casa" width="25px" height="25px" class="icon">Inicio
+                                <img src="./assets/icon home.svg" alt="Logo Casa" width="25px" height="25px"
+                                    class="icon">Inicio
                             </a>
                         </div>
                         <div class="item">
                             <a class="sub-btn">
-                                <img src="./assets/icon bicicleta.svg" alt="Logo Casa" width="25px" height="25px" class="icon">Bicicletas<img src="./assets/icon dropdown.svg" alt="Logo Casa" width="25px" height="25px" class="icon dropdown">
+                                <img src="./assets/icon bicicleta.svg" alt="Logo Casa" width="25px" height="25px"
+                                    class="icon">Bicicletas<img src="./assets/icon dropdown.svg" alt="Logo Casa"
+                                    width="25px" height="25px" class="icon dropdown">
                             </a>
                             <div class="sub-menu">
                                 <a href="./telaBicicletas.html" class="sub-item">Bicicleta 1</a>
@@ -36,11 +41,14 @@
                             </div>
                         </div>
                         <div class="item">
-                            <a href="./telaAlertas.html"><img src="./assets/icon alerta.svg" alt="Logo Casa" width="25px" height="25px" class="icon">Alertas</a>
+                            <a href="./telaAlertas.html"><img src="./assets/icon alerta.svg" alt="Logo Casa"
+                                    width="25px" height="25px" class="icon">Alertas</a>
                         </div>
                         <div class="item">
                             <a class="sub-btn">
-                                <img src="./assets/icon relatorio.svg" alt="Logo Casa" width="25px" height="25px" class="icon">Relatórios<img src="./assets/icon dropdown.svg" alt="Logo Casa" width="25px" height="25px" class="icon dropdown">
+                                <img src="./assets/icon relatorio.svg" alt="Logo Casa" width="25px" height="25px"
+                                    class="icon">Relatórios<img src="./assets/icon dropdown.svg" alt="Logo Casa"
+                                    width="25px" height="25px" class="icon dropdown">
                             </a>
                             <div class="sub-menu">
                                 <a href="#" class="sub-item">Relatórios de Manutenção</a>
@@ -48,13 +56,16 @@
                             </div>
                         </div>
                         <div class="item">
-                            <a href="index.html"><img src="./assets/icon feedback.svg" alt="Logo Casa" width="25px" height="25px" class="icon">Feedbacks</a>
+                            <a href="index.html"><img src="./assets/icon feedback.svg" alt="Logo Casa" width="25px"
+                                    height="25px" class="icon">Feedbacks</a>
                         </div>
                         <div class="item">
-                            <a href="index.html"><img src="./assets/icon sobre.svg" alt="Logo Casa" width="25px" height="25px" class="icon">Sobre</a>
+                            <a href="index.html"><img src="./assets/icon sobre.svg" alt="Logo Casa" width="25px"
+                                    height="25px" class="icon">Sobre</a>
                         </div>
                         <div class="item">
-                            <a href="./telaLogin.html"><img src="./assets/icon sair.svg" alt="Logo Casa" width="25px" height="25px" class="icon">Sair</a>
+                            <a href="./telaLogin.html"><img src="./assets/icon sair.svg" alt="Logo Casa" width="25px"
+                                    height="25px" class="icon">Sair</a>
                         </div>
                     </div>
                 </div>
@@ -67,52 +78,140 @@
                         <div class="modal__conteudo">
 
                             <div class="content">
-                   
-                    <form id="form">
-                        <div>
-                            <label>Insira o ID:</label>
-                            <input type="text" placeholder="ID: 2A-8F-4B-7D" class="inputs required">
+                                <h3>Adicionar Alerta</h3>
+
+                                <form id="form">
+                                    <div  class="modal__form-input">
+                                        <label>Insira o ID:</label>
+                                        <input type="text" class="inputs required" value="ID: 2A-8F-4B-7D">
+                                        
+                                    </div>
+                                    <div class="modal__form-input">
+                                        <label>Bicicleta:</label>
+                                        <select name="Select">
+
+                                            <option>Bicicleta1</option>
+                                            <option>Bicicleta2</option>
+                                            <option>Bicicleta3</option>
+                                            <option>Bicicleta4</option>
+                                            <option>Bicicleta5</option>
+                                            <option>Bicicleta6</option>
+                                            <option>Bicicleta7</option>
+                                            <option>Bicicleta8</option>
+                                            <option>Bicicleta9</option>
+                                        </select>
+
+                                    </div>
+                                    <div class="modal__form-input">
+                                        <label>Data do Alerta:</label>
+                                        <input type="date" class="inputs required" >
+                                    </div>
+
+
+                                    <div class="buttons">
+                                        <button type="submit">Salvar</button>
+                                        <button type="submit">Editar</button>
+                                        <button type="submit" id="fecharModal">Cancelar</button>
+                                    </div>
+                                </form>
+                            </div>                 
                         </div>
-                        <div>
-                            <label>Bicicleta:</label>
-                            <select name="Select">
-                               
-                                <option>Bicicleta1</option>
-                                <option>Bicicleta2</option>
-                                <option>Bicicleta3</option>
-                                <option>Bicicleta4</option>
-                                <option>Bicicleta5</option>
-                                <option>Bicicleta6</option>
-                                <option>Bicicleta7</option>
-                                <option>Bicicleta8</option>
-                                <option>Bicicleta9</option>
-                            </select>
-                         
-                        </div>
-                        <div>
-                            <label>Data do Alerta</label>
-                            <input type="password" class="inputs required">
-                        </div>
-                       
-                        
-                        <div class="buttons">
-                        <button type="submit">Salvar</button>
-                        <button type="submit">Editar</button>
-                        <button type="submit">Cancelar</button>
+
                     </div>
-                    </form>
                 </div>
-                            <div class="modal_conteudo-input">
-                                <button id="fecharModal">Fechar</button>
-                            </div>
+                <div class="conteudo__header">
 
-                        </div>
+                </div>
+                <div class="conteudo__alertas-historico">
+                    
+                    <div class="container__table">
+                        <table>
+                            <tr>
+                                <th>ID Bicicleta</th>
+                                <th>Data do Alerta</th>
+                                <th>Status</th>
+                                <th>Última manutenção</th>
+                            </tr>
+                            <tr>
+                                <td>Bicicleta 1</td>
+                                <td>09/03/2024</td>
+                                <td>Resolvido</td>
+                                <td>02/03/2024</td>
+                            </tr>
+                            <tr>
+                                <td>Bicicleta 2</td>
+                                <td>09/03/2024</td>
+                                <td>Resolvido</td>
+                                <td>02/03/2024</td>
+                            </tr>
+                            <tr>
+                                <td>Bicicleta 4</td>
+                                <td>09/03/2024</td>
+                                <td>Resolvido</td>
+                                <td>02/03/2024</td>
+                            </tr>
+                            <tr>
+                                <td>Bicicleta 1</td>
+                                <td>09/03/2024</td>
+                                <td>Resolvido</td>
+                                <td>02/03/2024</td>
+                            </tr>
+                            <tr>
+                                <td>Bicicleta 5</td>
+                                <td>09/03/2024</td>
+                                <td>Resolvido</td>
+                                <td>02/03/2024</td>
+                            </tr>
+                            <tr>
+                                <td>Bicicleta 3</td>
+                                <td>09/03/2024</td>
+                                <td>Resolvido</td>
+                                <td>02/03/2024</td>
+                            </tr>
+                            <tr>
+                                <td>Bicicleta 7</td>
+                                <td>09/03/2024</td>
+                                <td>Resolvido</td>
+                                <td>02/03/2024</td>
+                            </tr>
+                            <tr>
+                                <td>Bicicleta 6</td>
+                                <td>09/03/2024</td>
+                                <td>Resolvido</td>
+                                <td>02/03/2024</td>
+                            </tr>
+                            <tr>
+                                <td>Bicicleta 9</td>
+                                <td>09/03/2024</td>
+                                <td>Resolvido</td>
+                                <td>02/03/2024</td>
+                            </tr>
+                            <tr>
+                                <td>Bicicleta 2</td>
+                                <td>09/03/2024</td>
+                                <td>Resolvido</td>
+                                <td>02/03/2024</td>
+                            </tr>
+                            <tr>
+                                <td>Bicicleta 8</td>
+                                <td>09/03/2024</td>
+                                <td>Resolvido</td>
+                                <td>02/03/2024</td>
+                            </tr>
 
-                    </div>
-                    <div class="conteudo__alertas-ultimoalerta">
-                            
-                        <img src="./assets/img/bicicleta2.png" width="250px" height="150px">
- 
+                            <tr>
+                                <td>Bicicleta 4</td>
+                                <td>09/03/2024</td>
+                                <td>Resolvido</td>
+                                <td>02/03/2024</td>
+                            </tr>
+                            <tr>
+                                <td>Bicicleta 5</td>
+                                <td>09/03/2024</td>
+                                <td>Resolvido</td>
+                                <td>02/03/2024</td>
+                            </tr>                            
+                        </table>
                     </div>
                     <div class="conteudo__alertas-criaralerta">
                         <div class="container__botaoalerta">
@@ -124,75 +223,21 @@
                         <div class="container__botaoalerta">
                             <button>REMOVER ALERTA</button>
                         </div>
-
                     </div>
                 </div>
-                <div class="conteudo__alertas-historico">     
-                    <div class="container__table">
-                        <table>
-                            <tr>
-                                <th>ID Bicicleta</th>
-                                <th>Data do Alerta</th>
-                                <th>Status</th>
-                                <th>Última manutenção</th>
-                            </tr>
-                            <tr>
-                                <td>Bicicleta 1</td>
-                                <td>22:04 - 09/03/2024</td>
-                                <td>Resolvido</td>
-                                <td>12:00 - 02/03/2024</td>
-                            </tr>
-                            <tr>
-                                <td>Bicicleta 1</td>
-                                <td>09/03/2024</td>
-                                <td>Resolvido</td>
-                                <td>02/03/2024</td>
-                            </tr>
-                            <tr>
-                                <td>Bicicleta 1</td>
-                                <td>09/03/2024</td>
-                                <td>Resolvido</td>
-                                <td>02/03/2024</td>
-                            </tr>
-                            <tr>
-                                <td>Bicicleta 1</td>
-                                <td>09/03/2024</td>
-                                <td>Resolvido</td>
-                                <td>02/03/2024</td>
-                            </tr>
-                            <tr>
-                                <td>Bicicleta 1</td>
-                                <td>09/03/2024</td>
-                                <td>Resolvido</td>
-                                <td>02/03/2024</td>
-                            </tr>
-                            <tr>
-                                <td>Bicicleta 1</td>
-                                <td>09/03/2024</td>
-                                <td>Resolvido</td>
-                                <td>02/03/2024</td>
-                            </tr>
-                            <tr>
-                                <td>Bicicleta 1</td>
-                                <td>09/03/2024</td>
-                                <td>Resolvido</td>
-                                <td>02/03/2024</td>
-                            </tr>
-                            <tr>
-                                <td>Bicicleta 1</td>
-                                <td>09/03/2024</td>
-                                <td>Resolvido</td>
-                                <td>02/03/2024</td>
-                            </tr>
-                        </table>
-                    </div>                                   
+
+                <div class="conteudo__rodape">
+                    <div class="conteudo__rodape-botoes">
+                        <button>Próxima Página</button>
+                    </div>
                 </div>
 
 
             </div>
-        </div>        
+        </div>
     </div>
 
-    <script src="./js/telaAlerta.js"></script>              
+    <script src="./js/telaAlerta.js"></script>
 </body>
+
 </html>
