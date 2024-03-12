@@ -14,6 +14,8 @@
     --azul-claro: #BBE1FA;
     --azul-escuro: #2d4a7a;
     --cor-fonte: #fff;
+    --cor-de-fundo: #0F4C75;
+    --cor-menu : #1B262C;
 }
 
 .logoteste a{
@@ -38,7 +40,7 @@
 
 
 .side-bar {
-    background: rgba(0, 0, 0, 0.45);
+    background: var(--cor-menu);
     backdrop-filter:blur(15px); /* ler oq é */
     width: 15vw;
     height: 100vh;
@@ -126,7 +128,7 @@
     min-width: 100vw;
     min-height: 100vh;
     justify-content: space-between;
-    background: var(--azul-escuro);
+    background: var(--cor-de-fundo);
 }
 
 .navbar {
