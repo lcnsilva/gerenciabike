@@ -1,10 +1,11 @@
+import MenuLateral from "./components/Menu"
 
 
 function App() {
   
   return (
     <>
-     
+      <MenuLateral/>
     </>
   )
 }

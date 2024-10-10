@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+   --cor-de-fundo: #1B262C;
+   --cor-de-fundo-item: #FFFFFF;
+   --cor-fonte: #1B262C;
+   --cor-fonte-secundaria: #FFFFFF;
+}
+
+/* Posição e tamanho do botão de hambúrguer */
+.bm-burger-button {
+   position: fixed;
+   width: 36px;
+   height: 30px;
+   left: 36px;
+   top: 36px;
+}
+
+/* Cor/formato das barras de ícones de hambúrguer */
+.bm-burger-bars {
+   background: var(--cor-de-fundo);
+}
+
+/* Cor/formato das barras de ícones de hambúrguer ao passar o mouse*/
+.bm-burger-bars-hover {
+   background: rgba(0, 0, 0, 0.9);
+}
+
+/* Posição e dimensionamento do botão de cruz clicável */
+.bm-cross-button {
+   height: 24px;
+   width: 24px;
+}
+
+/* Cor/formato da cruz do botão fechar */
+.bm-cross {
+   background: var(--cor-de-fundo);
+}
+
+/* 
+ Estilos de wrapper da barra lateral 
+ Nota: Cuidado ao modificar este elemento, pois isso pode quebrar as animações - você não precisa tocá-lo na maioria dos casos 
+ */
+.bm-menu-wrap {
+   position: fixed;
+   height: 100%;
+}
+
+/* Estilos gerais da barra lateral */
+.bm-menu {
+   height: 100%;
+   background-color: var(--cor-de-fundo);
+   padding: 0;
+   font-size: 1.15em;
+   overflow: hidden;
+}
+
+/* Wrapper para lista de itens */
+.bm-item-list {
+   display: flex;
+   color: #b8b7ad;
+   padding: 0;
+   justify-content: left;
+   align-items: left;
+   flex-direction: column;
+}
+
+/* Item individual */
+.bm-item {
+   display: flex !important;
+   align-items: center;   
+   background-color: var(--cor-de-fundo-item);
+   padding: 1em;
+   margin: 1em 2em 0 0;
+   border-radius: 0px 16px 16px 0px;
+   color: var(--cor-fonte);
+   text-decoration: none;
+   font-size: 22px;
+   font-family: "Montserrat", sans-serif;
+   font-weight: 400;
+}
+
+/* Estilo da sobreposição */
+.bm-overlay {
+   background: rgba(0, 0, 0, 0.3);
+}
+
+.logout {
+   background-color: var(--cor-de-fundo);
+   color: var(--cor-fonte-secundaria);
+   border: 1px solid var(--cor-fonte-secundaria);
+   border-radius: 16px;
+   margin: 0.5em 1em;
+   margin-top: auto;   
+}
+
+.menu-item-icon {
+   padding-right: 1em;
+   height: 28px;
+   width: 28px;
+}
+
+.profile {
+   background-color: var(--cor-de-fundo);
+   color: var(--cor-fonte-secundaria);
+   display: flex !important;
+   gap: 0.5rem;
+}
+
+.container-info {
+   display: flex;
+   flex-direction: column;
+   font-size: 20px;
+   font-family: "Montserrat", sans-serif;
+   font-weight: 600;
+}
+
+.container-info h3 {
+   font-size: 14px;
+   font-weight: 300;
+}
+
+
+.profile-picture{
+   width: 60px;
+   height: 60px;
+}
+
+
+@media screen and (min-width:1024px){
+   .bm-menu-wrap {
+      width: 400px !important;
+   }
+}
+
