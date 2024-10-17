@@ -8,7 +8,7 @@
 }
 
 .cell-painel{
-    margin-bottom: 50%;
+    margin-bottom: 100%;
 }
 
 .painel-menu{
@@ -19,7 +19,6 @@
     text-align: center;
     justify-content: space-between;
     padding-top: 2px;
-
 }
 
 .title-tela{
@@ -30,3 +29,26 @@
     color: #FFF;
 }
 
+input[type='file']{
+    display: none;
+}
+
+#imgPhoto{
+    margin-top: 10%;
+    max-width: 300px;
+    width: 100%;
+    background-color: #eee;
+    border: 5px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background .3s;
+}
+
+#imgPhoto:hover{
+    background-color: rgb(180,180,180);
+    border: 5px solid #111;
+}
+
+.perfil{
+    padding-right: 30px;
+}
