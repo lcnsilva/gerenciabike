@@ -1,0 +1,37 @@
+ @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+.hour{
+    width: 34.15px;
+    height: 18;
+    font-size: 16px;
+    font-family: 'Inter'; 
+     color: #FFF;
+}
+
+.clock{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.icons-container-connection{
+    width: 20px;
+    height: 18;
+}
+
+.icons-container-wifi{
+    width: 25px;
+    height: 18;
+}
+
+.icons-container-capacity{
+    width: 22px;
+    height: 18;
+}
+
+.icons-container{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

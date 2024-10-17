@@ -5,6 +5,7 @@
    --cor-de-fundo-item: #FFFFFF;
    --cor-fonte: #1B262C;
    --cor-fonte-secundaria: #FFFFFF;
+   --cor-icone: #FFF;
 }
 
 /* Posição e tamanho do botão de hambúrguer */
@@ -19,6 +20,9 @@
 /* Cor/formato das barras de ícones de hambúrguer */
 .bm-burger-bars {
    background: var(--cor-de-fundo);
+}
+.bm-burger-bars {
+   background: var(--cor-icone);
 }
 
 /* Cor/formato das barras de ícones de hambúrguer ao passar o mouse*/
@@ -91,7 +95,7 @@
    border: 1px solid var(--cor-fonte-secundaria);
    border-radius: 16px;
    margin: 0.5em 1em;
-   margin-top: auto;   
+   margin-top: 250px;   
 }
 
 .menu-item-icon {

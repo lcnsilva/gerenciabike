@@ -5,7 +5,8 @@
     align-items: center;
     flex-direction: column;
     padding: 15px 18px; 
-    height: 500px;
+    height: 494px;
+    width: 360px;
     border-radius: 25px;
     margin: 1rem;
     background-color: #fff;
@@ -37,11 +38,7 @@
     padding: 0.5rem 0;
 }
 
-.wrapper{
-    height: 100px;
-    border-radius: 25px;
-    background-color: #1B262C;
-}
+
 
 .wrapper2{
     align-self: center;
@@ -55,26 +52,58 @@
 }
 
 .icons-wrapper{
-    width: 100%;
+    width: 95%;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     gap: 1.5rem;
+    
+}
+/*//////////////////////////////////////// */
+
+.wrapper{
+    height: 100px;
+    width: 284px;
+    border-radius: 25px;
+    background-color: #1B262C;
+    padding: 1em;
+    padding-left: 40px;
+    padding-right: 25px;
+    margin-left: -25px;
+}
+
+.text-icon-wrapper{
+    font-family: 'Work Sans';
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    margin: 0.3rem;
 }
 
 .icon-wrapper1{
-    /* width: 20%;
-    height: 55%; */
+    width: 55px;
+    height: 45px; 
+    margin: -1px;
+    padding-right: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: green;
     border-radius: 16px;
     padding: 1em;
-
+    
 }
 
 .icon-wrapper2{
-        /* width: 20%;
-        height: 55%; */
+    width: 70px;
+    height: 45px; 
+        margin: -1px;
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: orange;
     border-radius: 16px;
     padding: 1em;
@@ -82,19 +111,28 @@
 }
 
 .icon-wrapper3{
-    /* width: 20%;
-    height: 55%; */
+    width: 68px;
+    height: 45px; 
+    margin: -1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: red;
     border-radius: 16px;
     padding: 1em;
 }
+
+
+
+/* ////////////////////////////////////////// */
 
 img {
     width: 25px;
     height: 25px;
 }
 
-.icon-white-clock{
+.icon-white-clock,.icons{
     width: 40px;
     height: 40px;
 }

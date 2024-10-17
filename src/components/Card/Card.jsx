@@ -21,12 +21,24 @@ const Card = () => {
                 <div className='wrapper'>
                     <div className='icons-wrapper'>
 
-                    <div className='icon-wrapper1'><img src={disponivel} alt=''/></div>
-                    
-                    <div className='icon-wrapper2'><img src={manutencao} alt=''/></div>
-                    
-                    <div className='icon-wrapper3'><img src={indisponivel} alt=''/></div>
+                    <div className='icon-wrapper1'>
+                        <img src={disponivel} className='icons' alt=''/>
+                        <p className='text-icon-wrapper'>Disponivel</p>
                     </div>
+                        
+                        
+
+                    <div className='icon-wrapper2'>
+                        <img src={manutencao} className='icons' alt=''/>
+                        <p className='text-icon-wrapper'>Manutençâo</p>
+                    </div>
+                    
+                    <div className='icon-wrapper3'>
+                        <img src={indisponivel} className='icons' alt=''/>
+                        <p className='text-icon-wrapper'>Indisponivel</p>
+                    </div>
+                    </div>
+
                 </div>
                 <p className='title-input'>Tempo para a liberação:</p>
                 <div className='wrapper2'>
