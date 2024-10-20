@@ -53,39 +53,62 @@ input[type='file']{
     padding-right: 30px;
 }
 
-.slide-content{
+
+/* Estilo base para o conteúdo do slide */
+.slide-content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  /* Card da bicicleta e do número */
+  .bike-card, .number-card {
+    display: flex;
+    align-items: center;
     justify-content: center;
     border: 2px solid black;
-    border-radius: 5px;  /* Ajuste o valor conforme necessário */
-    width: 55px;
-    background-color: #ccc;
-    
-}
-
-.bike-icon{
-    font-size: 2rem;
-    padding: 10px;
-    
-    color: #FFF;
     border-radius: 10px;
-    width: 50px;
+    width: 55px;
+    height: 55px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .bike-card {
+    background-color: #2d2d2d; /* Fundo preto para o card da bicicleta quando não está selecionado */
+    cursor: pointer;
+  }
+  
+  .bike-card.selected {
+    background-color: white; /* Fundo branco quando o card da bicicleta é selecionado */
+  }
+  
+  /* Imagem da bicicleta */
+  .bike-icon {
+    width: 40px;
     height: auto;
-}
-
-.bike-number{
-    font-size: 1.2rem;
-    color: #2d2d2d;
+  }
+  
+  /* Card do número (não selecionado) */
+  .number-card {
+    background-color: #2d2d2d; /* Fundo preto para o card do número quando não está selecionado */
     margin-top: 10px;
-}
-
-.container-slide{
-    padding: 50px;
-    
-}
-
-.Bike-image{
-    
-}
+  }
+  
+  .bike-number {
+    font-size: 1.2rem;
+    color: #fff; /* Número branco quando o card não está selecionado */
+  }
+  
+  /* Estilo para o número e card do número quando selecionado */
+  .number-card.selected-number {
+    background-color: white; /* Fundo branco quando o card do número é selecionado */
+  }
+  
+  .bike-number.selected-number {
+    color: #000; /* Número preto quando o card do número é selecionado */
+  }
+  
+  
+  

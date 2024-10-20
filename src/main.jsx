@@ -7,7 +7,6 @@ import { register } from 'swiper/element/bundle';
 register();
 
 import 'swiper/css';
-import 'swiper/css/navigation'; //Setas
 import 'swiper/css/pagination'; //bolinhas
 import 'swiper/css/scrollbar'; 
 
