@@ -8,13 +8,16 @@ const Clock = () => {
     const [time, setTime] = useState(new Date());
 
     useEffect(()=>{
-        const timer = setInterval(() => {
-            setTime(new Date());
+        const timer = setInterval(() => { //define um intervalo que executa uma função a cada segundo
+            setTime(new Date()); //Essa função atualiza o estado time com a hora atual.
         },1000);
 
         return () => clearInterval(timer);// Limpa o intervalo quando o componente é desmontado
     },[]);
     const HoraFormatada = time.toLocaleTimeString([],{hour: '2-digit',minute:'2-digit'})
+
+    
+    
 
     return (
         <div className="clock">
