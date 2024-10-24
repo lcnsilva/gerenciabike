@@ -1,4 +1,3 @@
-import React from 'react';
 import './Card.css';
 import disponivel from '../../assets/icons_card/disponivel.svg'
 import indisponivel from '../../assets/icons_card/indisponivel.svg'
