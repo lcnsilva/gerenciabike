@@ -3,21 +3,20 @@
 
 body{
     background-color: #1B262C;
-    height: 100vh;
     margin: 24px;
 }
 
 
-:root{
-    --cor-de-fundo: #FFFFFF;
-    --cor-de-fundo-input: #EAEAEA;
-    --cor-de-fundo-botao: #3F72AF;
-    --cor-link: #3F72AF;
-    --cor-input-placeholder: #A0AEC0;
+.card{
+    --cor-de-fundo-card: #FFFFFF;
+    --cor-de-fundo-input-card: #EAEAEA;
+    --cor-de-fundo-botao-card: #3F72AF;
+    --cor-link-card: #3F72AF;
+    --cor-input-placeholder-card: #A0AEC0;
 }
 
 .card {
-    background-color: var(--cor-de-fundo);
+    background-color: var(--cor-de-fundo-card);
     padding: 2rem 1rem;
     border-radius: 20px;
     font-family: "Outfit", sans-serif;
@@ -36,7 +35,7 @@ body{
 }
 
 .card input{
-    background-color: var(--cor-de-fundo-input);
+    background-color: var(--cor-de-fundo-input-card);
     padding: 1rem 0;
     width: 100%;
     border-radius: 8px;
@@ -46,7 +45,7 @@ body{
     padding: 0 1rem;
     font-weight: 500;
     font-size: 16px;
-    color: var(--cor-input-placeholder);
+    color: var(--cor-input-placeholder-card);
 }
 
 .password__container{
@@ -78,7 +77,7 @@ body{
 .button__signIn {
     width: 100%;
     padding: 1rem 0;
-    background-color: var(--cor-de-fundo-botao);
+    background-color: var(--cor-de-fundo-botao-card);
     border-radius: 8px;
     font-family: "Outfit", sans-serif;
     font-size: 18px;
@@ -87,7 +86,7 @@ body{
 
 .link {
     text-decoration: none;
-    color: var(--cor-link);
+    color: var(--cor-link-card);
     font-weight: 700;
 }
 
