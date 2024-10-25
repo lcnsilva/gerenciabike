@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+body{
+    background-color: #1B262C;
+    height: 100vh;
+    margin: 24px;
+}
+
+
+:root{
+    --cor-de-fundo: #FFFFFF;
+    --cor-de-fundo-input: #EAEAEA;
+    --cor-de-fundo-botao: #3F72AF;
+    --cor-link: #3F72AF;
+    --cor-input-placeholder: #A0AEC0;
+}
+
+.card {
+    background-color: var(--cor-de-fundo);
+    padding: 2rem 1rem;
+    border-radius: 20px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+}
+
+.card h1 {
+    width: 100%;
+    font-size: 32px;
+    line-height: 140%;
+}
+
+.card input{
+    background-color: var(--cor-de-fundo-input);
+    padding: 1rem 0;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card input::placeholder{
+    padding: 0 1rem;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--cor-input-placeholder);
+}
+
+.password__container{
+    width: 100%;
+    display: flex;
+    padding: 1rem 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remember__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.remember__container label {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 130%;
+    width: 100%;
+}
+
+.remember__container input{
+    width: 20px;
+}
+
+.button__signIn {
+    width: 100%;
+    padding: 1rem 0;
+    background-color: var(--cor-de-fundo-botao);
+    border-radius: 8px;
+    font-family: "Outfit", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--cor-link);
+    font-weight: 700;
+}
+
+.card p{
+    font-weight: 500;
+    color: #718096;
+}
