@@ -1,21 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+import { Link } from 'react-router-dom';
+import styled from 'styled-components'
 
-
-body{
-    background-color: #1B262C;
-    margin: 24px;
-}
-
-
-.card{
+export const Wrapper = styled.div`
     --cor-de-fundo-card: #FFFFFF;
     --cor-de-fundo-input-card: #EAEAEA;
     --cor-de-fundo-botao-card: #3F72AF;
     --cor-link-card: #3F72AF;
     --cor-input-placeholder-card: #A0AEC0;
-}
+    background-color: #1B262C;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`;
 
-.card {
+export const Card = styled.form`
+    width: 80%;
     background-color: var(--cor-de-fundo-card);
     padding: 2rem 1rem;
     border-radius: 20px;
@@ -26,55 +27,60 @@ body{
     align-items: center;
     text-align: center;
     gap: 24px;
-}
+`;
 
-.card h1 {
-    width: 100%;
+export const Title = styled.h1`
     font-size: 32px;
     line-height: 140%;
-}
+`
 
-.card input{
+export const Input = styled.input`
     background-color: var(--cor-de-fundo-input-card);
-    padding: 1rem 0;
-    width: 100%;
+    padding: 1rem 1rem;
+    width: 90%;
     border-radius: 8px;
-}
-
-.card input::placeholder{
-    padding: 0 1rem;
-    font-weight: 500;
+    line-height: 100%;
     font-size: 16px;
-    color: var(--cor-input-placeholder-card);
-}
+    ::placeholder{
+        font-weight: 500;
+        font-size: 16px;
+        color: var(--cor-input-placeholder-card);
+    }
+`
 
-.password__container{
+export const PasswordContainer = styled.div `
     width: 100%;
     display: flex;
     padding: 1rem 0;
     justify-content: space-between;
     align-items: center;
-}
+`
 
-.remember__container {
+export const RememberContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-}
+`
 
-.remember__container label {
+export const RememberInput = styled.input`
+    width: 20px;
+`
+
+export const RememberLabel = styled.label`
     font-size: 16px;
     font-weight: 500;
     line-height: 130%;
     width: 100%;
-}
+`
 
-.remember__container input{
-    width: 20px;
-}
+export const RememberLink = styled(Link)`
+    text-decoration: none;
+    color: var(--cor-link-card);
+    font-weight: 700;
+`
 
-.button__signIn {
+export const SignButton = styled.button`
     width: 100%;
     padding: 1rem 0;
     background-color: var(--cor-de-fundo-botao-card);
@@ -82,15 +88,13 @@ body{
     font-family: "Outfit", sans-serif;
     font-size: 18px;
     font-weight: 600;
-}
+`
 
-.link {
-    text-decoration: none;
-    color: var(--cor-link-card);
-    font-weight: 700;
-}
-
-.card p{
+export const RegisterText = styled.p`
     font-weight: 500;
     color: #718096;
-}
+`
+export const LogoLogin = styled.img`
+    width: 250px;
+    height: 200px;
+`
