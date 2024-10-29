@@ -1,10 +1,10 @@
-import './style.css'
+import * as S from './style.js'
 
 const HomeCondomino = () => {
     return(
-        <div>
+        <S.Wrapper>
             <h1>Home Condômino</h1>
-        </div>
+        </S.Wrapper>
     )
 }
 
