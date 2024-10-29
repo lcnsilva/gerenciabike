@@ -13,6 +13,7 @@ createRoot(document.getElementById('root')).render(
         <Route path='/' element={<HomeCondomino />}/>
         <Route path='/home' element={<Home />}/>
         <Route path='/login' element={<Login />}/>
+        <Route path='*' element={<HomeCondomino />}/> {/*o * serve pra redirecionar qualquer endpoint desconhecido para a page escolhida*/}
       </Routes>
     </BrowserRouter>
   </StrictMode>,
