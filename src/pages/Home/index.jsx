@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import * as S from './style.js'
+import Header from "../../components/Header/index.jsx";
 // import MenuLateral from "../../components/Menu";
 
 
@@ -18,9 +19,6 @@ const Home = () => {
     };
 
     const handleSubmit = async (e) => {
-        if(!token) {
-            window.location.reload;
-        }
         e.preventDefault();
         const API_URL = `http://localhost:3000/usuario/${idUser}`;
         // const API_URL = 'http://localhost:3000/usuario/671ea0f3ac06bd80d036d47c'
@@ -48,6 +46,7 @@ const Home = () => {
 
     return(
         <div>
+            <Header></Header>
             <form onSubmit={handleSubmit}>
                 <input type="text" onChange={handleChange}/>
                 <button type='submit'>Enviar</button>                
@@ -56,7 +55,7 @@ const Home = () => {
             {data && (
                 <div>
                     <h1>Dados do Usuário:</h1>
-                    <pre>{JSON.stringify(data)}</pre>
+                    <p>{JSON.stringify(data)}</p>
                 </div>
             )}
         </div>    

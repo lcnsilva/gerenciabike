@@ -5,12 +5,14 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Login from './pages/Login'
 import Home from './pages/Home'
 import HomeCondomino from './pages/HomeCondomino'
+import Bicicleta from './pages/Bicicleta'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<HomeCondomino />}/>
+        <Route path='/bicicleta/:id' element={<Bicicleta/>}/>
         <Route path='/home' element={<Home />}/>
         <Route path='/login' element={<Login />}/>
         <Route path='*' element={<HomeCondomino />}/> {/*o * serve pra redirecionar qualquer endpoint desconhecido para a page escolhida*/}
