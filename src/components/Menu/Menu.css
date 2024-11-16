@@ -9,16 +9,16 @@
 
 /* Posição e tamanho do botão de hambúrguer */
 .bm-burger-button {
-   position: fixed;
+   position: absolute;
    width: 36px;
    height: 30px;
-   left: 36px;
-   top: 36px;
+   left: 26px;
+   top: 20px;
 }
 
 /* Cor/formato das barras de ícones de hambúrguer */
 .bm-burger-bars {
-   background: var(--cor-de-fundo);
+   background: var(--cor-de-fundo-item);
 }
 
 /* Cor/formato das barras de ícones de hambúrguer ao passar o mouse*/

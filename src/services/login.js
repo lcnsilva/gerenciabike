@@ -6,8 +6,10 @@ const login = async (userData) => {
             email: userData.email,
             password: userData.password
         })
+        // if(!response.ok){
+        //     return response;
+        // }
         const data = response.data;
-        console.log(data);
         return data;
     }catch(error){
         if(error.response){

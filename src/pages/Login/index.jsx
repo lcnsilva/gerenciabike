@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import {  useNavigate } from 'react-router-dom';
-import login from '../../services/login.js';
 import {  Slide, ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import logo from '../../assets/icons_menu/whitebike.svg'
 import * as S from './style.js'
+import api from '../../services/api.js';
 
 const Login = () => {
     const [user, setUser] = useState({
@@ -28,7 +28,11 @@ const Login = () => {
     const handleSubmit = async (event) => {
         try {
             event.preventDefault();
-            const data = await login(user);
+            const response = await api.post('/usuario/login', {
+                email: user.email,
+                password: user.password
+            });
+            const data = response.data;
             if (!data.token) {
                 toast.error(data.msg , {
                     position: "bottom-center",
@@ -51,6 +55,19 @@ const Login = () => {
                 });
             }                 
         } catch (error) {
+            if(error.response){
+                toast.error(error.response.data.msg , {
+                    position: "bottom-center",
+                    autoClose: 4000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "light",
+                    transition: Slide,
+                    });
+            }
             console.log(error);
         }
     }
@@ -82,7 +99,7 @@ const Login = () => {
                     </S.RememberContainer>                    
                     <S.RememberLink to='/recuperar'>Esqueceu a senha?</S.RememberLink>
                 </S.PasswordContainer>
-                <S.SignButton type='submit'>Esqueceu a senha?</S.SignButton>
+                <S.SignButton type='submit'>Entre com seu email</S.SignButton>
                 <S.RegisterText>Não tem uma conta? <S.RememberLink to='/registro' >Registre-se</S.RememberLink></S.RegisterText>
             </S.Card>
         </S.Wrapper>
