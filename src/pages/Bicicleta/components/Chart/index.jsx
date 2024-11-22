@@ -1,13 +1,13 @@
-import { 
-    Container
-} from '/style.js'
+// import { 
+//     Container
+// } from '/style.js'
 
-const Chart = () => {
-    return (
-        <Container>
-            <canvas id='myChart'></canvas>
-        </Container>
-    )
-}
+// const Chart = () => {
+//     return (
+//         <Container>
+//             <canvas id='myChart'></canvas>
+//         </Container>
+//     )
+// }
 
-export default Chart;
+// export default Chart;
