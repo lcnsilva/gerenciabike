@@ -91,7 +91,7 @@ const Card = ({ bicicleta, editSelected, onCancel, fetchBicicleta }) => {
         <Container>
             <Form onSubmit={handleSubmit}>
                 <ContainerInput>
-                    <Label htmlFor='id'>ID:</Label>
+                    <Label htmlFor='id'>Tag RFID:</Label>
                     <Input
                         name='tagRfid'
                         type='text'
@@ -101,7 +101,7 @@ const Card = ({ bicicleta, editSelected, onCancel, fetchBicicleta }) => {
                         value={newBicicleta.tagRfid || ''} />
                 </ContainerInput>
                 <ContainerInput>
-                    <Label htmlFor='modelo'>Modelo:</Label>
+                    <Label htmlFor='modelo'>Nome da Bicicleta:</Label>
                     <Input
                         name='nome'
                         type='text'
