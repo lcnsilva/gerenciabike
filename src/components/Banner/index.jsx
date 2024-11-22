@@ -1,8 +1,8 @@
 import 'swiper/css';
-import img1 from '../../assets/banner_img_test/img1.png'
-import img2 from '../../assets/banner_img_test/img2.jpg'
-import img3 from '../../assets/banner_img_test/img1.png'
-import img4 from '../../assets/banner_img_test/img2.jpg'
+import img1 from '../../assets/banner_img_test/aviso.jpg'
+import img2 from '../../assets/banner_img_test/aviso2.png'
+import img3 from '../../assets/banner_img_test/aviso.jpg'
+import img4 from '../../assets/banner_img_test/aviso2.png'
 import { 
     Wrapper, SwiperContainer, Slide, SlideImage
 } from './Banner.js'

@@ -12,7 +12,7 @@ createRoot(document.getElementById('root')).render(
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<HomeCondomino />}/>
-        <Route path='/bicicleta/:id' element={<Bicicleta/>}/>
+        <Route path='/bicicletas/:id' element={<Bicicleta/>}/>
         <Route path='/home' element={<Home />}/>
         <Route path='/login' element={<Login />}/>
         <Route path='*' element={<HomeCondomino />}/> {/*o * serve pra redirecionar qualquer endpoint desconhecido para a page escolhida*/}

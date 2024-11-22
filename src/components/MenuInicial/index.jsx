@@ -1,6 +1,6 @@
 
 import "../Menu/Menu.css"
-import { slide as Menu} from 'react-burger-menu'
+import { push as Menu} from 'react-burger-menu'
 import home from '../../assets/icons_menu/home.svg'
 import login from '../../assets/icons_menu_inicial/login.svg'
 import sobre from '../../assets/icons_menu_inicial/sobre.svg'
@@ -16,7 +16,12 @@ const MenuInicial = () => {
     var nome = "Usuario Teste"
     var username = "@usuario_teste"
     return (        
-            <Menu customBurgerIcon={ <img src={burgerIcon}/> } customCrossIcon={ <img src={fecharIcon} /> }>
+            <Menu 
+            customBurgerIcon={ <img src={burgerIcon}/> } 
+            customCrossIcon={ <img src={fecharIcon} /> } 
+            pageWrapId={ "page-wrap" }
+            outerContainerId={ "outer-container" }
+            >
                 <div className="menu-item profile">
                     <img className="profile-picture" src={profilePicture}/>
                     <div className="container-info">

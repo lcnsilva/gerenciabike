@@ -13,10 +13,12 @@ export const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 `;
 
 export const Card = styled.form`
     width: 80%;
+    height: 50%;
     background-color: var(--cor-de-fundo-card);
     padding: 2rem 1rem;
     border-radius: 20px;
@@ -27,6 +29,7 @@ export const Card = styled.form`
     align-items: center;
     text-align: center;
     gap: 24px;
+
 `;
 
 export const Title = styled.h1`
@@ -94,7 +97,8 @@ export const RegisterText = styled.p`
     font-weight: 500;
     color: #718096;
 `
+
 export const LogoLogin = styled.img`
-    width: 250px;
-    height: 200px;
+    width: 150px;
+    height: 100px;
 `

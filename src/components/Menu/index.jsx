@@ -1,6 +1,6 @@
 
 import "./Menu.css"
-import { slide as Menu} from 'react-burger-menu'
+import { push as Menu} from 'react-burger-menu'
 import bike from '../../assets/icons_menu/bike.svg'
 import home from '../../assets/icons_menu/home.svg'
 import alerta from '../../assets/icons_menu/notifications.svg'
@@ -27,7 +27,12 @@ const MenuLateral = () => {
     }
 
     return (        
-            <Menu customCrossIcon={ <img src={fecharIcon} /> } customBurgerIcon={ <img src={burgerIcon}/> }>
+            <Menu 
+            customCrossIcon={ <img src={fecharIcon} /> }
+            customBurgerIcon={ <img src={burgerIcon}/> }
+            pageWrapId={ "page-wrap" }
+            outerContainerId={ "outer-container" }
+            >
                 <div className="menu-item profile">
                     <img className="profile-picture" src={profilePicture}/>
                     <div className="container-info">

@@ -89,9 +89,8 @@
    background-color: var(--cor-de-fundo);
    color: var(--cor-fonte-secundaria);
    border: 1px solid var(--cor-fonte-secundaria);
-   border-radius: 16px;
-   margin: 0.5em 1em;
-   margin-top: auto;   
+   border-radius: 0 16px 16px 0;
+   margin: 1em 2em 0 0;
 }
 
 .menu-item-icon {
