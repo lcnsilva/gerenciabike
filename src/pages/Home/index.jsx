@@ -52,7 +52,6 @@ const Home = () => {
         try{
             const response = await api.get(`/bicicletas`);
             const data = response.data
-            console.log(data);
             setBicicletas(data);
         }catch(error){
             console.log(error);

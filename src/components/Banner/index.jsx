@@ -24,8 +24,6 @@ const Banner = () => {
                 spaceBetween={50}
                 slidesPerView={1}
                 pagination={{ clickable: true }}
-                onSwiper={(swiper) => console.log(swiper)}
-                onSlideChange={() => console.log('slide change')}
             >
                 {slides.map((slide) => (
                     <Slide key={Math.random()}>
