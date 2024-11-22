@@ -12,7 +12,6 @@ import Slider from "./components/Slider";
 import deleteIcon from '../../assets/icons_bike/delete.svg'
 import editIcon from '../../assets/icons_bike/edit.svg'
 import Card from "./components/Card/index.jsx";
-import Chart from "./components/Chart/index.jsx";
 
 
 const Bicicleta = () => {
@@ -67,7 +66,6 @@ const Bicicleta = () => {
                 editSelected={editSelected} 
                 onCancel={handleCancel} 
                 fetchBicicleta={fetchBicicleta}/>
-                <Chart></Chart>
                 
             </PageContainer>
 
