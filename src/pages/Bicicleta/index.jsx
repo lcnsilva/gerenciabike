@@ -3,7 +3,8 @@ import {
     Container, ButtonContainer, Button,
     IconButton,
     TitleButton,
-    PageContainer
+    PageContainer,
+    ContainerCard
 } from "./style.js";
 import Header from "../../components/Header";
 import { useEffect, useState } from "react";
@@ -51,6 +52,14 @@ const Bicicleta = () => {
             <Header title={`${bicicleta.nome || ''}`} />
             <PageContainer id="page-wrap">
                 <Slider bicicletaIndex={bicicletaIndex} />
+                
+                <ContainerCard>
+                    <Card
+                        bicicleta={bicicleta}
+                        editSelected={editSelected}
+                        onCancel={handleCancel}
+                        fetchBicicleta={fetchBicicleta} />
+                </ContainerCard>
                 <ButtonContainer>
                     <Button onClick={handleEdit} name="editButton">
                         <IconButton src={editIcon} />
@@ -61,12 +70,8 @@ const Bicicleta = () => {
                         <TitleButton>Excluir</TitleButton>
                     </Button>
                 </ButtonContainer>
-                <Card 
-                bicicleta={bicicleta} 
-                editSelected={editSelected} 
-                onCancel={handleCancel} 
-                fetchBicicleta={fetchBicicleta}/>
-                
+
+
             </PageContainer>
 
         </Container>

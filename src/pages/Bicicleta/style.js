@@ -1,5 +1,15 @@
 import styled from "styled-components";
 
+const size = {
+    mobileM: '375px',
+    mobileL: '425px',
+    tablet: '768px',
+    laptop: '1024px',
+    laptopM: '1280px',
+    laptopL: '1440px',
+    desktop: '2560px'
+}
+
 export const Container = styled.div`
     width: 100%;
     display: flex;
@@ -10,15 +20,37 @@ export const PageContainer = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
 `
 
 export const ButtonContainer = styled.div`
+    align-self: center;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    margin-bottom: 1.5rem;
+    @media (min-width: ${size.tablet}) {
+        width: 65%;
+        height: auto;
+    }
+    @media (min-width: ${size.laptop}) {
+        width: 55%;
+        height: auto;
+    }
+    @media (min-width: ${size.laptopM}) {
+        width: 45%;
+        height: auto;
+    }
+    @media (min-width: ${size.laptopL}) {
+        width: 30%;
+        height: auto;
+    }
+    @media (min-width: ${size.desktop}) {
+        width: 20%;
+        height: auto;
+    }
 `
 
 export const Button = styled.button`
@@ -46,4 +78,28 @@ export const TitleButton = styled.h3`
 export const IconButton = styled.img`
     width: 30px;
     height: 30px;
+`
+
+export const ContainerCard = styled.div`
+    width: 100%;
+    align-self: center;
+    @media (min-width: ${size.tablet}) {
+        width: 60%;
+        height: auto;
+    }
+    @media (min-width: ${size.laptop}) {
+        width: 50%;
+        height: auto;
+    }
+    @media (min-width: ${size.laptopM}) {
+        width: 40%;
+        height: auto;
+    }
+    @media (min-width: ${size.laptopL}) {
+        width: 30%;
+        height: auto;
+    }
+    @media (min-width: ${size.desktop}) {
+        width: 20%;
+    }
 `

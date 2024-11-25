@@ -1,5 +1,15 @@
 import styled from "styled-components";
 
+const size = {
+    mobileM: '375px',
+    mobileL: '425px',
+    tablet: '768px',
+    laptop: '1024px',
+    laptopM: '1280px',
+    laptopL: '1440px',
+    desktop: '2560px'
+}
+
 export const Container = styled.div`
     display: flex;
     align-items: center;
@@ -9,6 +19,9 @@ export const Container = styled.div`
     margin: 1rem;
     background-color: #fff;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    @media (min-width: ${size.tablet}) {
+        margin: 0;
+    }
 `
 
 export const Form = styled.form`
@@ -16,6 +29,7 @@ export const Form = styled.form`
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    
 `
 
 export const ContainerInput = styled.div`

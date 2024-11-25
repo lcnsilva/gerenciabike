@@ -14,15 +14,24 @@ export const WrapperHeader = styled.header`
     background-color: #1B262C;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 1rem 0;
 `
 
 export const SideBarContainer = styled.div`
-    width: 30%;
+    width: 20%;
     align-self: stretch;
     display: flex;
+    @media (min-width: ${size.tablet}) {
+        width: 10%;
+    }
+    @media (min-width: ${size.laptopL}) {
+        width: 5%;
+    }
+    @media (min-width: ${size.desktop}) {
+        width: 0%;
+    }
 `
 
 export const Title = styled.h1`
@@ -32,10 +41,14 @@ export const Title = styled.h1`
     font-weight: 300;
     padding: 0.5rem 0;
     text-align: center;
-    width: 100%;
+    width: 80%;
+    @media (min-width: ${size.tablet}) {
+        width: 100%;
+    }
 `
 
 export const Icon = styled.img`
+    width: 10%;
     padding: 0 1rem;
     width: 30px;
     max-height: 30px;

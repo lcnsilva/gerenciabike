@@ -18,7 +18,7 @@ const ButtonSlider = ({ index, id, selected }) => {
                     : 
                     <ButtonIcon src={ciclistWhiteIcon} />
                 }
-                <ButtonNumber $selected={selected}>{index}</ButtonNumber>
+                <ButtonNumber $selected={selected}>{index + 1}</ButtonNumber>
             </StyledLink>
         </Container>
     )

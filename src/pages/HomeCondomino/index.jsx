@@ -7,12 +7,12 @@ import {
 import { useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import api from '../../services/api.js';
+import Footer from '../../components/Footer/index.jsx';
 
 const HomeCondomino = () => {
 
     const navigate = useNavigate();
     const [bicicletas, setBicicletas] = useState([{}]);
-
 
     const fetchData = async () => {
         try{
@@ -42,6 +42,7 @@ const HomeCondomino = () => {
                 <Banner/>
                 <GridCardMiniatura bicicletas={bicicletas}/>
             </Container>
+            <Footer />
         </Wrapper>
     )
 }

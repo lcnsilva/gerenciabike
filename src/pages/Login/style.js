@@ -1,6 +1,16 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components'
 
+const size = {
+    mobileM: '375px',
+    mobileL: '425px',
+    tablet: '768px',
+    laptop: '1024px',
+    laptopM: '1280px',
+    laptopL: '1440px',
+    desktop: '2560px'
+}
+
 export const Wrapper = styled.div`
     --cor-de-fundo-card: #FFFFFF;
     --cor-de-fundo-input-card: #EAEAEA;
@@ -14,11 +24,12 @@ export const Wrapper = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 3rem;
 `;
 
 export const Card = styled.form`
     width: 80%;
-    height: 50%;
+    height: auto;
     background-color: var(--cor-de-fundo-card);
     padding: 2rem 1rem;
     border-radius: 20px;
@@ -29,7 +40,25 @@ export const Card = styled.form`
     align-items: center;
     text-align: center;
     gap: 24px;
-
+    @media (min-width: ${size.tablet}) {
+        width: 55%;
+        height: auto;
+    }
+    @media (min-width: ${size.laptop}) {
+        width: 45%;
+        height: auto;
+    }
+    @media (min-width: ${size.laptopM}) {
+        width: 35%;
+        height: auto;
+    }
+    @media (min-width: ${size.laptopL}) {
+        width: 25%;
+        height: auto;
+    }
+    @media (min-width: ${size.desktop}) {
+        width: 15%;
+    }
 `;
 
 export const Title = styled.h1`
@@ -101,4 +130,12 @@ export const RegisterText = styled.p`
 export const LogoLogin = styled.img`
     width: 150px;
     height: 100px;
+`
+
+export const ContainerLogo = styled.div`
+    align-self: flex-start;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `

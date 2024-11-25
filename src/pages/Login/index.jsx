@@ -3,9 +3,9 @@ import {  Link, useNavigate } from 'react-router-dom';
 import {  Slide, ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import logo from '../../assets/icons_menu/whitebike.svg'
-import * as S from './style.js'
 import {
-    Wrapper, Card, Title, Input, PasswordContainer, RememberContainer, RememberInput, RememberLabel, RememberLink, SignButton, RegisterText, LogoLogin
+    Wrapper, Card, Title, Input, PasswordContainer, RememberContainer, RememberInput, RememberLabel, RememberLink, SignButton, RegisterText, LogoLogin,
+    ContainerLogo
 } from './style.js'
 import api from '../../services/api.js';
 import { useRef } from 'react';
@@ -74,9 +74,11 @@ const Login = () => {
                 theme= "light"
                 transition= {Slide}
             />
-            <Link to='/'>
-                <LogoLogin src={logo} alt='Logo'></LogoLogin>
-            </Link>
+            <ContainerLogo>
+                <Link to='/'>
+                    <LogoLogin src={logo} alt='Logo'></LogoLogin>
+                </Link>
+            </ContainerLogo>
             <Card onSubmit={handleSubmit}>
                 <Title>Entrar na sua conta</Title>
                 <Input

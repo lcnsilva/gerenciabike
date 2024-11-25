@@ -11,7 +11,6 @@ import { Link } from 'react-router-dom';
 
 const Header = (props) => {
     const haveToken = !!localStorage.getItem('token');
-    const titleDesktop = 'GERENCIA BIKE'
     const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
 
     const updateMedia = () => {
@@ -48,7 +47,7 @@ const Header = (props) => {
                     <SideBarContainer>
                         {haveToken ? <MenuAuthenticated /> : <MenuNoAuthenticated/>}
                     </SideBarContainer>
-                    <Title>{titleDesktop}</Title>
+                    <Title>{props.title}</Title>
                     {haveToken ?
                         <ContainerIcon>
                             <Icon src={profilePicture}></Icon>

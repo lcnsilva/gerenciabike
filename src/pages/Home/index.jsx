@@ -10,6 +10,8 @@ import Header from "../../components/Header/index.jsx";
 import Banner from "../../components/Banner/index.jsx";
 import GridCardMiniatura from "../../components/GridCardMiniatura/index.jsx";
 import api from "../../services/api.js";
+import { useNavigate } from "react-router-dom";
+import Footer from "../../components/Footer/index.jsx";
 // import MenuLateral from "../../components/Menu";
 
 
@@ -18,6 +20,7 @@ const Home = () => {
     // const [token, setToken] = useState();
     // const [idUser, setIdUser] = useState();
     const [bicicletas, setBicicletas] = useState([{}]);
+    const navigate = useNavigate();
 
 
     // useEffect(() => {
@@ -63,8 +66,14 @@ const Home = () => {
     }
 
     useEffect(() => {
+        const checkToken = () => {
+            if (!localStorage.getItem('token')) {
+                navigate('/');
+            }
+        };
+        checkToken();
         fetchData();
-    },[])
+    },[navigate])
 
     return(
         <Wrapper id="outer-container">
@@ -77,8 +86,9 @@ const Home = () => {
                 <SectionTitle>
                     Bicicletas
                 </SectionTitle>
-                <GridCardMiniatura bicicletas={bicicletas}/>
+                <GridCardMiniatura bicicletas={bicicletas} />
             </Container>
+            <Footer/>
         </Wrapper>
     )
 }
