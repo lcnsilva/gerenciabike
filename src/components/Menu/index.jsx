@@ -44,21 +44,21 @@ const MenuLateral = () => {
                 <img className="menu-item-icon" src={home} />
                 Inicio
             </Link>
-            <Link to='/home' className="menu-item">
+            {/* <Link to='/home' className="menu-item">
                 <img className="menu-item-icon" src={bike} />
                 Bicicletas
-            </Link>
-            <Link to='/home' className="menu-item">
+            </Link> */}
+            {/* <Link to='/home' className="menu-item">
                 <img className="menu-item-icon" src={alerta} />
                 Alerta
-            </Link>
+            </Link> */}
             <Link to='/home' className="menu-item">
                 <img className="menu-item-icon" src={relatorio} />
-                Relatório
+                Relatório de Uso
             </Link>
             <Link to='/home' className="menu-item">
                 <img className="menu-item-icon" src={feedback} />
-                Feedback
+                Feedbacks
             </Link>
             <Link to='/home' className="menu-item">
                 <img className="menu-item-icon" src={settings} />

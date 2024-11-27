@@ -2,7 +2,8 @@ import Header from '../../components/Header/index.jsx';
 import Banner from '../../components/Banner/index.jsx';
 import GridCardMiniatura from '../../components/GridCardMiniatura/index.jsx';
 import { 
-    Wrapper, Container
+    Wrapper, Container,
+    SectionTitle
 }from './style.js'
 import { useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
@@ -39,7 +40,13 @@ const HomeCondomino = () => {
         <Wrapper id="outer-container">
             <Header title='Página Inicial'/>
             <Container id="page-wrap">
+                <SectionTitle style={{marginTop: '1.5rem'}}>
+                    Quadro de Avisos
+                </SectionTitle>
                 <Banner/>
+                <SectionTitle style={{marginBottom: '1rem'}}>
+                    Bicicletas
+                </SectionTitle>
                 <GridCardMiniatura bicicletas={bicicletas}/>
             </Container>
             <Footer />

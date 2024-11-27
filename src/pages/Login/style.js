@@ -128,8 +128,8 @@ export const RegisterText = styled.p`
 `
 
 export const LogoLogin = styled.img`
-    width: 150px;
-    height: 100px;
+    width: 450px;
+    height: 200px;
 `
 
 export const ContainerLogo = styled.div`

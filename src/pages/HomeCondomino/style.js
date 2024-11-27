@@ -28,3 +28,9 @@ export const Container = styled.div`
     width: 100%;
 `
 
+export const SectionTitle = styled.h2`
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-weight: 400;
+`

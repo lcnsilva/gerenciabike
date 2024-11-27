@@ -2,7 +2,10 @@ import { useState } from 'react';
 import {  Link, useNavigate } from 'react-router-dom';
 import {  Slide, ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import logo from '../../assets/icons_menu/whitebike.svg'
+import logo1 from '../../assets/icons_header/logo1.svg'
+import logo2 from '../../assets/icons_header/logo2.svg'
+import logo3 from '../../assets/icons_header/logo3.svg'
+
 import {
     Wrapper, Card, Title, Input, PasswordContainer, RememberContainer, RememberInput, RememberLabel, RememberLink, SignButton, RegisterText, LogoLogin,
     ContainerLogo
@@ -76,7 +79,10 @@ const Login = () => {
             />
             <ContainerLogo>
                 <Link to='/'>
-                    <LogoLogin src={logo} alt='Logo'></LogoLogin>
+                    <LogoLogin src={logo1} alt='Logo'></LogoLogin>
+                    <LogoLogin src={logo2} alt='Logo'></LogoLogin>
+                    <LogoLogin src={logo3} alt='Logo'></LogoLogin>
+
                 </Link>
             </ContainerLogo>
             <Card onSubmit={handleSubmit}>
