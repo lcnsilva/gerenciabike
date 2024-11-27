@@ -6,9 +6,6 @@ import availableIcon from './../../assets/icons_card/available.svg'
 import maintenanceIcon from './../../assets/icons_card/maintenance.svg'
 import viewIcon from '../../assets/icons_card/visualizarMais.svg'
 
-
-
-
 const CardMiniaturaDesktop = ({ bicicleta, index }) => {
 
     const haveToken = !!localStorage.getItem('token');

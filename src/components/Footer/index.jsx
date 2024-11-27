@@ -5,7 +5,7 @@ import {
 const Footer = () => {
     return (
         <Container>
-            FooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooter
+            FooterFooterFooter
         </Container>
     )
 }

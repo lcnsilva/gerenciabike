@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import Chart from "./components/Chart";
+import Slider from "./components/Slider";
 
 const size = {
     mobileM: '375px',
@@ -102,4 +104,69 @@ export const ContainerCard = styled.div`
     @media (min-width: ${size.desktop}) {
         width: 20%;
     }
+`
+
+export const ContainerTest = styled.div`
+    width: 100%;
+    height: 50%;
+`
+export const StyledChart = styled(Chart)`
+
+`
+
+export const ContainerDesktop = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+`
+
+export const PageContainerDesktop = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`
+export const ContainerData = styled.div`
+    width: 70%;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    padding: 2rem;
+    @media (min-width: ${size.laptopM}) {
+        width: 95%;
+        height: auto;
+    }
+    @media (min-width: ${size.laptopL}) {
+        width: 90%;
+        height: auto;
+    }
+    @media (min-width: ${size.desktop}) {
+        width: 80%;
+    }
+`
+
+export const ContainerCardDesktop = styled.div`
+    width: 50%;
+    height: auto;
+`
+
+export const ContainerCharts = styled.div`
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+`
+
+export const ContainerSlider = styled.div`
+    width: 100%;
+    align-self: stretch;
+`
+
+export const ContainerListaManutencao = styled.div`
+    width: 100%;
+    height: 50%;
 `

@@ -25,19 +25,19 @@ export const StyledSwiper = styled(Swiper)`
         height: auto;
     }
     @media (min-width: ${size.laptop}) {
-        width: 50%;
+        width: 45%;
         height: auto;
     }
     @media (min-width: ${size.laptopM}) {
-        width: 40%;
+        width: 35%;
         height: auto;
     }
     @media (min-width: ${size.laptopL}) {
-        width: 30%;
+        width: 25%;
         height: auto;
     }
     @media (min-width: ${size.desktop}) {
-        width: 20%;
+        width: 15%;
     }
 `
 

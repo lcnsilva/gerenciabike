@@ -1,12 +1,16 @@
 import { useEffect, useState } from 'react';
 import {
-    Button, Container, ContainerButton, ContainerInput, ContainerState, Form, Input, Label, OptionState, SelectState
+    Button, Container, ContainerButton, ContainerInput, ContainerState, Form, Input, Label, OptionState, SelectState, Title, ContainerButtons, ButtonAvailable, ButtonMaintenance, ButtonIcon
 } from './style.js'
 import api from '../../../../services/api.js';
+import availableIcon from '../../../../assets/icons_card/available.svg';
+import maintenanceIcon from '../../../../assets/icons_card/maintenance.svg';
 
 const Card = ({ bicicleta, editSelected, onCancel, fetchBicicleta }) => {
 
     const [editMode, setEditMode] = useState(false);
+    const [isAvailable, setIsAvailable] = useState();
+    const [isMaintenance, setIsMaintenance] = useState();
     const [newBicicleta, setNewBicicleta] = useState(
         {
             _id: '',
@@ -24,6 +28,11 @@ const Card = ({ bicicleta, editSelected, onCancel, fetchBicicleta }) => {
     }
 
     useEffect(() => {
+        setIsAvailable(bicicleta.disponivel);
+        if(bicicleta.manutencao){
+            setIsAvailable(false);
+        }
+        setIsMaintenance(bicicleta.manutencao);
         if (bicicleta) {
             setNewBicicleta({
                 _id: bicicleta._id || '',
@@ -90,6 +99,15 @@ const Card = ({ bicicleta, editSelected, onCancel, fetchBicicleta }) => {
     return (
         <Container>
             <Form onSubmit={handleSubmit}>
+                <Title>Disponibilidade:</Title>
+                <ContainerButtons>
+                    <ButtonAvailable $isAvailable={isAvailable}>
+                        <ButtonIcon src={availableIcon} />
+                    </ButtonAvailable>
+                    <ButtonMaintenance $isMaintenance={isMaintenance}>
+                        <ButtonIcon src={maintenanceIcon} />
+                    </ButtonMaintenance>
+                </ContainerButtons>
                 <ContainerInput>
                     <Label htmlFor='id'>Tag RFID:</Label>
                     <Input
@@ -136,12 +154,21 @@ const Card = ({ bicicleta, editSelected, onCancel, fetchBicicleta }) => {
                         </OptionState>
                     </SelectState>
                 </ContainerState>
+                <ContainerInput>
+                    <Label htmlFor='modelo'>Link da imagem:</Label>
+                    <Input
+                        name='caminhoImagem'
+                        type='text'
+                        placeholder=''
+                        disabled={!editMode}
+                        onChange={handleChange}
+                        value={newBicicleta.caminhoImagem || ''}
+                    />
+                </ContainerInput>
                 {editMode && <ContainerButton>
                     <Button type='button' onClick={handleCancel}>Cancelar</Button>
                     <Button type='submit'>Salvar</Button>
                 </ContainerButton>}
-
-
             </Form>
         </Container>
     )

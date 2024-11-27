@@ -16,7 +16,7 @@ const GridCardMiniatura = ({ bicicletas }) => {
     useEffect(() => {
         window.addEventListener('resize', updateMedia);
         return () => window.removeEventListener('resize', updateMedia);
-    })
+    }, [])
 
     return (
         isMobile ? 
