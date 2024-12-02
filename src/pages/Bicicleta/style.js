@@ -22,7 +22,7 @@ export const PageContainer = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 `
 
 export const ButtonContainer = styled.div`

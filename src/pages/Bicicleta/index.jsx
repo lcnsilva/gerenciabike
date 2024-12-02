@@ -24,6 +24,8 @@ import editIcon from '../../assets/icons_bike/edit.svg'
 import Card from "./components/Card/index.jsx";
 import CardDesktop from "./components/CardDesktop/index.jsx";
 import Table from "../../components/Table/index.jsx";
+import Footer from '../../components/Footer/index.jsx';
+
 
 
 const Bicicleta = () => {
@@ -59,6 +61,7 @@ const Bicicleta = () => {
     }
 
     useEffect(() => {
+        window.scrollTo(0,0);
         setEditSelected(false);
         fetchBicicleta(id);
         window.addEventListener('resize', updateMedia);
@@ -114,6 +117,7 @@ const Bicicleta = () => {
                     <ContainerSlider>
                         <Slider bicicletaIndex={bicicletaIndex} />
                     </ContainerSlider>
+                    <Footer></Footer>
                 </PageContainerDesktop>
             </ ContainerDesktop>
         )

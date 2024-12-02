@@ -1,6 +1,8 @@
 import Header from "../../components/Header/index.jsx";
 import Card from "./Components/Card/index.jsx";
 import { Container } from "./style.js"
+import Footer from '../../components/Footer/index.jsx';
+
 
 const Feedback = () => {
 
@@ -10,6 +12,7 @@ const Feedback = () => {
             <div id='page-wrap'>
                 <Card />
             </div>
+            <Footer/>
         </Container>
     )
 }

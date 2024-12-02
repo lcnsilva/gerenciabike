@@ -37,13 +37,13 @@ const MenuInicial = () => {
                 <img className="menu-item-icon" src={login} />
                 Login
             </Link>
-            <Link to='/sobre' className="menu-item">
-                <img className="menu-item-icon" src={sobre} />
-                Sobre
-            </Link>
             <Link to='/feedback' className="menu-item">
                 <img className="menu-item-icon" src={feedback} />
                 Feedback
+            </Link>
+            <Link to='/sobre' className="menu-item">
+                <img className="menu-item-icon" src={sobre} />
+                Sobre
             </Link>
             </Menu>
     )

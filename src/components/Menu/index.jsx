@@ -53,8 +53,8 @@ const MenuLateral = () => {
                 Alerta
             </Link> */}
             <Link to='/home' className="menu-item">
-                <img className="menu-item-icon" src={relatorio} />
-                Relatório de Uso
+                <img className="menu-item-icon" src={bike} />
+                Adicionar Bicicleta
             </Link>
             <Link to='/home' className="menu-item">
                 <img className="menu-item-icon" src={feedback} />

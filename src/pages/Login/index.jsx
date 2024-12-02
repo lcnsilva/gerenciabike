@@ -2,8 +2,6 @@ import { useState } from 'react';
 import {  Link, useNavigate } from 'react-router-dom';
 import {  Slide, ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import logo1 from '../../assets/icons_header/logo1.svg'
-import logo2 from '../../assets/icons_header/logo2.svg'
 import logo3 from '../../assets/icons_header/logo3.svg'
 
 import {
@@ -65,7 +63,7 @@ const Login = () => {
     }
     return (
         <Wrapper>
-            <ToastContainer
+                       <ToastContainer
                 limit={1}
                 position= "bottom-center"
                 autoClose={4000}
@@ -79,10 +77,7 @@ const Login = () => {
             />
             <ContainerLogo>
                 <Link to='/'>
-                    <LogoLogin src={logo1} alt='Logo'></LogoLogin>
-                    <LogoLogin src={logo2} alt='Logo'></LogoLogin>
                     <LogoLogin src={logo3} alt='Logo'></LogoLogin>
-
                 </Link>
             </ContainerLogo>
             <Card onSubmit={handleSubmit}>
