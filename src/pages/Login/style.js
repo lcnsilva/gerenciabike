@@ -23,9 +23,8 @@ export const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 3rem;
-`;
+    gap: 1rem;
+`
 
 export const Card = styled.form`
     width: 80%;
@@ -128,12 +127,11 @@ export const RegisterText = styled.p`
 `
 
 export const LogoLogin = styled.img`
-    width: 450px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
 `
 
 export const ContainerLogo = styled.div`
-    align-self: flex-start;
     width: 100%;
     display: flex;
     align-items: center;

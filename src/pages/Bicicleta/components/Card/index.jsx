@@ -114,7 +114,7 @@ const Card = ({ bicicleta, editSelected, onCancel, fetchBicicleta }) => {
                         name='tagRfid'
                         type='text'
                         placeholder=''
-                        disabled={!editMode}
+                        disabled={true}
                         onChange={handleChange}
                         value={newBicicleta.tagRfid || ''} />
                 </ContainerInput>

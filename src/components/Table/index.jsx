@@ -6,14 +6,14 @@ import {
 const Table = () => {
 
     const data = [{ nome: 'bicicleta', bicicleta: '80b62f14', topico: 'Pneu furado' },
-    { nome: 'bicicleta2', bicicleta: '80b62f14', topico: 'Corrente fuebrada' },
+    { nome: 'bicicleta2', bicicleta: '80b62f14', topico: 'Corrente Quebrada' },
     { nome: 'bicicleta3', bicicleta: '80b62f14', topico: 'Sem freio' },]
 
     return (
         <StyledTable>
             <TableRow>
                 <TableHead colSpan={3}>
-                    Lista de Manutenção
+                    Relatórios de Manutenção
                 </TableHead>
             </TableRow>
             <TableRow>
@@ -27,7 +27,7 @@ const Table = () => {
                     Defeito
                 </TableHead>
             </TableRow>
-            {data.map((bicicleta, index) =>
+            {data.map((bicicleta) =>
                 <TableRow key={bicicleta.nome}>
                     <TableData>
                         {bicicleta.nome}
