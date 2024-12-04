@@ -15,7 +15,6 @@ import { ContainerData } from './style.js';
 import { ContainerAllButtons } from './style.js';
 import { ContainerImgBike } from './style.js';
 import { ImgBike } from './style.js';
-import { toPadding } from 'chart.js/helpers';
 
 const CardDesktop = ({ bicicleta, fetchBicicleta }) => {
 
@@ -58,6 +57,7 @@ const CardDesktop = ({ bicicleta, fetchBicicleta }) => {
                 caminhoImagem: bicicleta.caminhoImagem || ''
             });
         }
+        setEditMode(false);
     }, [bicicleta]);
 
 
@@ -121,7 +121,7 @@ const CardDesktop = ({ bicicleta, fetchBicicleta }) => {
                             name='tagRfid'
                             type='text'
                             placeholder=''
-                            disabled={!editMode}
+                            disabled={true}
                             onChange={handleChange}
                             value={newBicicleta.tagRfid || ''} />
                     </ContainerInput>

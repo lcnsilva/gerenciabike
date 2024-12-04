@@ -60,6 +60,7 @@ export const ContainerButton = styled.div`
 `
 
 export const UpdateButton = styled.button`
+    cursor: pointer;
     align-items: flex-end;
     width: 30%;
     background-color: #1B262C;

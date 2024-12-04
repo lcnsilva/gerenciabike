@@ -2,7 +2,9 @@ import { useState } from 'react';
 import {  Link, useNavigate } from 'react-router-dom';
 import {  Slide, ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import logo3 from '../../assets/icons_header/logo3.svg'
+import logo4 from '../../assets/icons_header/logo3.svg'
+import logo3 from '../../assets/icons_header/logogeral.svg'
+
 
 import {
     Wrapper, Card, Title, Input, PasswordContainer, RememberContainer, RememberInput, RememberLabel, RememberLink, SignButton, RegisterText, LogoLogin,

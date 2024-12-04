@@ -29,7 +29,7 @@ export const Wrapper = styled.div`
         width: 35%;
     }
     @media (min-width: ${size.desktop}) {
-        width: 30%;
+        width: 25%;
     }
 `
 export const SwiperContainer = styled(Swiper)`
@@ -51,6 +51,14 @@ export const Slide = styled(SwiperSlide)`
 export const SlideImage = styled.img`
     border-radius: 18px;
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 300px;
+    object-fit: contain;
+    max-height: 100%;
+    @media (min-width: ${size.tablet}) {
+        height: 400px;
+
+    }
+    @media (min-width: ${size.laptopM}) {
+        height: 300px;
+    }
 `

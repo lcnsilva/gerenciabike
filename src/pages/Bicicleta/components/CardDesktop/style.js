@@ -1,15 +1,5 @@
 import styled from "styled-components";
 
-const size = {
-    mobileM: '375px',
-    mobileL: '425px',
-    tablet: '768px',
-    laptop: '1024px',
-    laptopM: '1280px',
-    laptopL: '1440px',
-    desktop: '2560px'
-}
-
 export const Container = styled.div`
     display: flex;
     align-items: center;

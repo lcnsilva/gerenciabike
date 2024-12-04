@@ -1,5 +1,15 @@
 import styled from "styled-components";
 
+const size = {
+    mobileM: '375px',
+    mobileL: '425px',
+    tablet: '768px',
+    laptop: '1024px',
+    laptopM: '1280px',
+    laptopL: '1440px',
+    desktop: '2560px'
+}
+
 export const Container = styled.div`
     display: flex;
     align-items: center;
@@ -9,7 +19,26 @@ export const Container = styled.div`
     border-radius: 25px;
     margin: 1rem;
     background-color: #fff;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    @media (min-width: ${size.tablet}) {
+        width: 50%;
+        height: auto;
+    }
+    @media (min-width: ${size.laptop}) {
+        width: 45%;
+        height: auto;
+    }
+    @media (min-width: ${size.laptopM}) {
+        width: 35%;
+        height: auto;
+    }
+    @media (min-width: ${size.laptopL}) {
+        width: 25%;
+        height: auto;
+    }
+    @media (min-width: ${size.desktop}) {
+        width: 20%;
+    }
 `
 
 export const Form = styled.form`
@@ -20,7 +49,6 @@ export const InputBox = styled.div`
     width: 100%;
     position: relative;
     margin: 20px 0;
-
 `
 
 export const Label = styled.label`

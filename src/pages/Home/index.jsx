@@ -81,9 +81,6 @@ const Home = () => {
             <Container id="page-wrap">
                 <SectionTitle style={{marginTop: '1.5rem'}}>
                     Quadro de Avisos
-                    {/* <ContainerButton>
-                        <UpdateButton onClick={handleClick}>Atualizar</UpdateButton>
-                    </ContainerButton> */}
                 </SectionTitle>
                 <Banner/>
                 <ContainerButton>

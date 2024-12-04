@@ -128,7 +128,19 @@ export const RegisterText = styled.p`
 
 export const LogoLogin = styled.img`
     width: 150px;
-    height: 150px;
+    height: auto;
+    @media (min-width: ${size.tablet}) {
+        width: 200px;
+    }
+    @media (min-width: ${size.laptop}) {
+        width: 250px;
+    }
+    @media (min-width: ${size.laptopM}) {
+        width: 200px;
+    }
+    @media (min-width: ${size.laptopL}) {
+        width: 250px;
+    }
 `
 
 export const ContainerLogo = styled.div`

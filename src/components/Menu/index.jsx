@@ -3,9 +3,6 @@ import "./Menu.css"
 import { push as Menu} from 'react-burger-menu'
 import bike from '../../assets/icons_menu/bike.svg'
 import home from '../../assets/icons_menu/home.svg'
-import alerta from '../../assets/icons_menu/notifications.svg'
-import relatorio from '../../assets/icons_menu/relatorio.svg'
-import settings from '../../assets/icons_menu/settings.svg'
 import feedback from '../../assets/icons_menu/Grupo.svg'
 import botaoSair from '../../assets/icons_menu/sign-out.svg'
 import fecharIcon from '../../assets/icons_menu/white-cross.svg'
@@ -44,14 +41,6 @@ const MenuLateral = () => {
                 <img className="menu-item-icon" src={home} />
                 Inicio
             </Link>
-            {/* <Link to='/home' className="menu-item">
-                <img className="menu-item-icon" src={bike} />
-                Bicicletas
-            </Link> */}
-            {/* <Link to='/home' className="menu-item">
-                <img className="menu-item-icon" src={alerta} />
-                Alerta
-            </Link> */}
             <Link to='/home' className="menu-item">
                 <img className="menu-item-icon" src={bike} />
                 Adicionar Bicicleta
@@ -59,10 +48,6 @@ const MenuLateral = () => {
             <Link to='/home' className="menu-item">
                 <img className="menu-item-icon" src={feedback} />
                 Feedbacks
-            </Link>
-            <Link to='/home' className="menu-item">
-                <img className="menu-item-icon" src={settings} />
-                Configurações
             </Link>
             <Link to='/' className="menu-item logout" onClick={handleLogout}>
                 <img className="menu-item-icon" src={botaoSair} />
